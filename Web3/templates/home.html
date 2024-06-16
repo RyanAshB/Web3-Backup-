@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="home-content">
+    <!-- <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div> -->
+    <div class="main-module">
+        <div class="main-text">
+            <h1>Web3 Remittance</h1>
+            <p>Fiat to Crypto, Crypto to Fiat transfer.</p>
+            <hr>
+            <p>Send to family and friends, using Regional, Domestic, Utility Coin (RDUC): US$C, CB$C, JM$C, AS$C, EU$C, AF$C, or other listed coins such as USDT.</p>
+        </div>
+        <div class="main-image">
+            <img src="{{ url_for('static', filename='download.png') }}" alt="download">
+        </div>
+    </div>
+    <div class="three-columns">
+        <div class="column">
+            <div class="image-circle">
+                <img src="{{ url_for('static', filename='Select Wallet.png') }}" alt="Select Wallet">
+                <!-- <div class="number">1</div> -->
+            </div>
+            <div class="column-text">
+                <h2>Select Wallet</h2>
+                <p>Web3 wallet, buy & swap Crypto.</p>
+            </div>
+            
+        </div>
+        <div class="column">
+            <div class="image-circle">
+                <img src="{{ url_for('static', filename='Crypto Card.png') }}" alt="Crypto Card">
+                <!-- <div class="number">2</div> -->
+            </div>
+            <div class="column-text">
+                <h2>Crypto Card</h2>
+                <p>Sign up for virtual Crypto debit card for free.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-circle">
+                <img src="{{ url_for('static', filename='Send Crypto.png') }}" alt="Send Crypto">
+                <!-- <div class="number">3</div> -->
+            </div>
+            <div class="column-text">
+                <h2>Send Crypto</h2>
+                <p>Send Web3 funds/Crypto to wallet address or card.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
