@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="home-content">
+    <!-- <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div> -->
+    <div class="home-top">
+        <div class="main-text">
+            <h1>Web3 Remittance</h1>
+            <p><strong>Fiat to Crypto, Crypto to Fiat transfer.</strong></p>
+            <hr>
+            <p><strong>Send to family and friends, using Regional, Domestic, Utility Coin (RDUC): US$C, CB$C, JM$C, AS$C, EU$C, AF$C, or other listed coins such as USDT.</strong></p>
+        </div>
+        <div class="main-image">
+            <img src="{{ url_for('static', filename='download.png') }}" alt="download">
+        </div>
+    </div>
+
+    <div class="three-columns">
+        <div class="column">
+            <div class="image-circle">
+                <img src="{{ url_for('static', filename='Select Wallet.png') }}" alt="Select Wallet">
+                <!-- <div class="number">1</div> -->
+                <div class="column-heading">
+                    <h2>Select Wallet</h2>
+                </div>
+            </div>
+            <div class="column-text">
+                <p>Web3 wallet, buy & swap Crypto.</p>
+            </div>
+            
+        </div>
+        <div class="column">
+            <div class="image-circle">
+                <img src="{{ url_for('static', filename='Crypto Card.png') }}" alt="Crypto Card">
+                <!-- <div class="number">2</div> -->
+                <div class="column-heading">
+                    <h2>Crypto Card</h2>
+                </div>
+            </div>
+            <div class="column-text">
+                <p>Sign up for virtual Crypto debit card for free.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-circle">
+                <img src="{{ url_for('static', filename='Send Crypto.png') }}" alt="Send Crypto">
+                <!-- <div class="number">3</div> -->
+                <h2>Send Crypto</h2>
+            </div>
+            <div class="column-text">
+                <p>Send Web3 funds/Crypto to wallet address or card.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

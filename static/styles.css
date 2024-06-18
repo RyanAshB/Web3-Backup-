@@ -1,0 +1,291 @@
+/* static/styles.css */
+:root {
+    /* --bgcolor: #4f7ae2;
+    --ribbon-color: #223f81; */
+    /* --bgcolor: linear-gradient(rgb(231, 23, 231),purple); */
+    /* --bgcolor: rgb(231, 23, 231); */
+    --bgcolor:white;
+    --ribbon-color: #800080;
+    --text-color:black;
+    --link-color: blue;
+}
+
+hr {
+    background-color: black;
+    height: 3px;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /* width: 95%; */
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--bgcolor);
+    color: white;
+}
+
+nav {
+    background-color: var(--bgcolor);
+    display: inline-flex;
+    width: 100%;
+}
+
+nav img {
+    height: 200px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, var(--ribbon-color), #c400c4);
+    border-bottom-left-radius: 40px;
+    margin-bottom: 100px;
+    margin-left: auto;    
+    width: 100%;
+    box-shadow: -1px 1px 10px grey; /* Shadow around each column */
+}
+
+nav ul li {
+    display: inline;
+    /* margin-left: 20px;  */
+    margin-top: 20px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav ul li a.button {
+    border-radius: 5px;
+}
+
+.home-top {
+    display: inline-flex;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+main {
+    padding: 20px;
+    background: var(--bgcolor);
+    width: 1281px;
+
+}
+
+.main-text hr {
+    margin-right: 50%;
+}
+
+.main-module {
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.main-image img{
+    width: 100%;
+    height: 500px;
+}
+
+.main-text {
+    text-align: left;
+    width: 50%;
+}
+
+.main-text h1 {
+    color: #800080;
+    font-size: 4em;
+}
+
+.main-text p {
+    margin-right: 20px;
+    color: var(--text-color);
+    font-size: x-large;
+}
+
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-text {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.column h2 {
+    margin-left: 20px
+}
+
+.column {
+    width: 20%;
+    background-color: var(--ribbon-color);
+    color: var(--bgcolor);
+    border-radius: 5%;
+    box-shadow: -4px 4px 10px grey; /* Shadow around each column */
+
+}
+
+.image-circle {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.image-circle img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--text-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background: linear-gradient(to right, var(--ribbon-color), #c400c4);
+    color: var(--text-color);
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-content div {
+    width: 30%;
+    text-align: center;
+}
+
+/* .footer-content a{
+    color: var(--link-color);
+} */
+
+
+
+.social-media, .legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns links to the left. Use center if you want them centered */
+    gap: 10px; /* Adds space between the links */
+}
+
+.icon-container {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--bgcolor);
+}
+
+.icons img {
+    width: 5%;
+    height: 5%;
+    margin: 0 0.625%; /* Set margin to 0.25 times the radius */
+}
+
+/* .dots {
+    display: flex;
+    justify-content: left;
+    gap: 10px; 
+    margin-bottom: 10px; 
+} 
+
+.dot {
+    width: 10px; 
+    height: 10px; 
+    background-color: var(--text-color); 
+    border-radius: 50%;
+} */
+
+i {
+    margin-right: 20px;
+}
+
+.about-content {
+    padding-right: 60%;
+}
+
+
+.about-content p, h1 {
+    color: var(--text-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.questions-content {
+    padding-right: 60%;
+}
+
+.questions-content p {
+    color: var(--text-color);
+}
+
+.questions-content .question p {
+    font-size: 20px;
+}
+
+.answer {
+    margin-bottom: 100px;
+}
+
+.answer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.hiw-content {
+    padding-right: 60%;
+}
+
+.hiw-content p, li {
+    color: var(--text-color)
+}
+
+.hiw-content .title p {
+    font-size: 40px;
+}
+
+.instructions {
+    margin-bottom: 100px
+}
+
+.instructions li {
+    margin-bottom: 20px;
+}
+
