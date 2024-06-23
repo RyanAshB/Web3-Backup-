@@ -12,31 +12,35 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="{{ url_for('static', filename='Logo2.jpeg') }}" alt="Jamaica">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='Logo2.jpeg') }}" alt="Jamaica">
+                </a>
             </div>
-            <ul>
-                <li><a href="/about"><strong>About</strong></a></li>
-                <li><a href="/hiw"><strong>How it Works</strong></a></li>
-                <li><a href="/questions"><strong>Q&A</strong></a></li>
-                <li><a href="#download"><strong>Download Wallet</strong></a></li>
-                <li><a href="#debit-card"><strong>Crypto Debit Card</strong></a></li>
-                <li><a href="#connect" class="button"><strong>Connect</strong></a></li>
-            </ul>
+            <div class="nav-icon">
+                <ul>
+                    <li><a href="/about"><strong>About</strong></a></li>
+                    <li><a href="/hiw"><strong>How it Works</strong></a></li>
+                    <li><a href="/questions"><strong>Q&A</strong></a></li>
+                    <li><a href="#download"><strong>Download Wallet</strong></a></li>
+                    <li><a href="#debit-card"><strong>Crypto Debit Card</strong></a></li>
+                    <li><a href="#connect" class="button"><strong>Connect</strong></a></li>
+                </ul>
+                <div class="icon-container">
+                    <div class="icons">
+                        <img src="{{ url_for('static', filename='Mexico.png') }}" alt="Mexico">
+                        <img src="{{ url_for('static', filename='Philiphines.png') }}" alt="Philiphines">
+                        <img src="{{ url_for('static', filename='Vietnam.png') }}" alt="Vietnam">
+                        <img src="{{ url_for('static', filename='Jamaica.png') }}" alt="Jamaica">
+                        <img src="{{ url_for('static', filename='China.png') }}" alt="China">
+                        <img src="{{ url_for('static', filename='India.png') }}" alt="India">
+                        <img src="{{ url_for('static', filename='Germany.png') }}" alt="Germany">
+                        <img src="{{ url_for('static', filename='France.png') }}" alt="France">
+                        <img src="{{ url_for('static', filename='Egypt.png') }}" alt="Egypt">
+                        <img src="{{ url_for('static', filename='Bangladesh.png') }}" alt="Bangladesh">
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div class="icon-container">
-            <div class="icons">
-                <img src="{{ url_for('static', filename='Mexico.png') }}" alt="Mexico">
-                <img src="{{ url_for('static', filename='Philiphines.png') }}" alt="Philiphines">
-                <img src="{{ url_for('static', filename='Vietnam.png') }}" alt="Vietnam">
-                <img src="{{ url_for('static', filename='Jamaica.png') }}" alt="Jamaica">
-                <img src="{{ url_for('static', filename='China.png') }}" alt="China">
-                <img src="{{ url_for('static', filename='India.png') }}" alt="India">
-                <img src="{{ url_for('static', filename='Germany.png') }}" alt="Germany">
-                <img src="{{ url_for('static', filename='France.png') }}" alt="France">
-                <img src="{{ url_for('static', filename='Egypt.png') }}" alt="Egypt">
-                <img src="{{ url_for('static', filename='Bangladesh.png') }}" alt="Bangladesh">
-            </div>
-        </div>
     </header>
     <main>
         <!-- <div class="main-module">

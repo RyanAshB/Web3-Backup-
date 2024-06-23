@@ -5,9 +5,11 @@
     /* --bgcolor: linear-gradient(rgb(231, 23, 231),purple); */
     /* --bgcolor: rgb(231, 23, 231); */
     --bgcolor:white;
-    --ribbon-color: #800080;
-    --text-color:black;
-    --link-color: blue;
+    --ribbon-color: #6A2C70;
+    --text-color:white;
+    --link-color: white;
+    --main-color: linear-gradient(to right, #c400c4, var(--ribbon-color));
+
 }
 
 hr {
@@ -51,16 +53,18 @@ nav ul {
     margin-bottom: 0px;
     background: linear-gradient(to right, var(--ribbon-color), #c400c4);
     border-bottom-left-radius: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-left: auto;    
-    width: 100%;
     box-shadow: -1px 1px 10px grey; /* Shadow around each column */
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 nav ul li {
     display: inline;
     /* margin-left: 20px;  */
     margin-top: 20px; 
+    text-align: center;
 }
 
 nav ul li a {
@@ -73,16 +77,44 @@ nav ul li a.button {
     border-radius: 5px;
 }
 
+
 .home-top {
     display: inline-flex;
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.para {
+    padding-right: 150px;
+}
+
+.para button {
+    color: var(--ribbon-color);
+    background: white;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.para button:hover {
+    color: white;
+    background: var(--ribbon-color);
+}
+
+.top-body {
+    background: var(--main-color);
 }
 
 main {
-    padding: 20px;
     background: var(--bgcolor);
-    width: 1281px;
 
 }
 
@@ -90,7 +122,7 @@ main {
     margin-right: 50%;
 }
 
-.main-module {
+.main-module-body {
     padding-bottom: 50px;
     padding-left: 150px;
     padding-right: 150px;
@@ -103,12 +135,12 @@ main {
 
 .main-text {
     text-align: left;
-    width: 50%;
+    width: 70%;
 }
 
 .main-text h1 {
-    color: #800080;
-    font-size: 4em;
+    color: var(--text-color);
+    font-size: 3em;
 }
 
 .main-text p {
@@ -120,6 +152,10 @@ main {
 .three-columns {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .column-text {
@@ -130,14 +166,22 @@ main {
 }
 
 .column h2 {
-    margin-left: 20px
+    margin-left: 20px;
+}
+
+.column-top {
+    color: #6A2C70;
+    padding-top: 75px;
+    padding-left: 150px;
+    font-size: 40px;
 }
 
 .column {
-    width: 20%;
-    background-color: var(--ribbon-color);
+    width: 25%;
+    background-color: #da00da;
     color: var(--bgcolor);
     border-radius: 5%;
+    border: 3px solid black;
     box-shadow: -4px 4px 10px grey; /* Shadow around each column */
 
 }
@@ -147,6 +191,7 @@ main {
     width: 100px;
     height: 100px;
     margin-left: 20px;
+
 }
 
 .image-circle img {
@@ -171,8 +216,9 @@ main {
 
 footer {
     background: linear-gradient(to right, var(--ribbon-color), #c400c4);
-    color: var(--text-color);
-
+    color: var(--link-color);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .footer-content {
@@ -185,6 +231,10 @@ footer {
 .footer-content div {
     width: 30%;
     text-align: center;
+}
+
+.footer-content a {
+    color: black;
 }
 
 /* .footer-content a{
@@ -201,8 +251,6 @@ footer {
 }
 
 .icon-container {
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
 .icons {
@@ -239,6 +287,7 @@ i {
 
 .about-content {
     padding-right: 60%;
+    font-size: 30px;
 }
 
 
@@ -250,6 +299,7 @@ i {
 
 .questions-content {
     padding-right: 60%;
+    font-size: 30px;
 }
 
 .questions-content p {
@@ -257,7 +307,7 @@ i {
 }
 
 .questions-content .question p {
-    font-size: 20px;
+
 }
 
 .answer {
@@ -271,21 +321,168 @@ i {
 
 .hiw-content {
     padding-right: 60%;
+    font-size: 30px;
 }
 
 .hiw-content p, li {
     color: var(--text-color)
 }
 
-.hiw-content .title p {
-    font-size: 40px;
-}
 
 .instructions {
-    margin-bottom: 100px
+    margin-bottom: 50px
 }
 
 .instructions li {
     margin-bottom: 20px;
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Your styles for tablets here */
+    nav ul{
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+
+    nav img {
+        height: 120px;
+    }
+
+    nav ul li {
+        font-size: 10px;
+    }
+
+    nav .icons {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .home-top {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center; /* Center-align all items horizontally */
+        justify-content: center; /* Center-align all items vertically */
+        text-align: center;
+    }
+    .home-top .main-text, .para{
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .home-top hr {
+        margin: 0px;
+    }
+
+    .three-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align all items horizontally */
+        justify-content: center; /* Center-align all items vertically */
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 100px;
+    }
+
+    .column {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .about-content {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .hiw-content {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .questions-content {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    /* Your styles for mobile devices here */
+
+    .nav {
+        width: 500px;
+    }
+
+    nav img {
+        height: 120px;
+    }
+
+    nav ul li {
+        font-size: 8px;
+        margin: 0px
+    }
+
+    nav .icons {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    html {
+        width: 650px;
+    }
+
+    .home-top {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center; /* Center-align all items horizontally */
+        justify-content: center; /* Center-align all items vertically */
+        text-align: center;
+    }
+
+    .home-top .main-text, .para{
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .home-top hr {
+        margin: 0px;
+    }
+
+    .three-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align all items horizontally */
+        justify-content: center; /* Center-align all items vertically */
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 100px;
+    }
+
+    .column {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .about-content {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .hiw-content {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .questions-content {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+}
+
+
+
+
 
