@@ -143,11 +143,6 @@ main {
 
 .main-text h1 {
     color: var(--text-color);
-    font-size: 3em;
-}
-
-.main-text h1.web3 {
-    font-size: 3.9em;
 }
 
 .main-text p {
@@ -189,7 +184,7 @@ main {
 
 .column {
     width: 25%;
-    background-color: #da00da;
+    background-color: var(--ribbon-color);
     color: var(--bgcolor);
     border-radius: 5%;
     border: 3px solid black;
@@ -337,6 +332,10 @@ i {
 
 .hiw-content p, li {
     color: var(--text-color)
+}
+
+.hiw-content ol li {
+    padding-bottom: 50px;
 }
 
 
